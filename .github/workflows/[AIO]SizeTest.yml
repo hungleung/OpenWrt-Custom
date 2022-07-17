@@ -162,6 +162,7 @@ jobs:
           #     "include":[
           #         {
           #             "Worker_ID":"1",
+          #             "DEVICE_IDNUM":"5",
           #             "Sed_Script":"1,11p",
           #             "First_Job_No":"1"
           #         },...
@@ -177,7 +178,7 @@ jobs:
             [[ $seq_line_to -eq -1 ]] && seq_line_to=${lines_num} # 越界返回0，打个补丁
             Sed_Script="${seq_line_from},${seq_line_to}p"
             echo "[Job $i]Test ${job_no_from}-${job_no_to}" "|" "行号：${Sed_Script}"
-            json_content="${json_content}{\"Worker_ID\":\"${i}\",\"Sed_Script\":\"${Sed_Script}\",\"First_Job_No\":\"${job_no_from}\"},"
+            json_content="${json_content}{\"Worker_ID\":\"${i}\",\"DEVICE_IDNUM\":\"${DEVICE_IDNUM}\",\"Sed_Script\":\"${Sed_Script}\",\"First_Job_No\":\"${job_no_from}\"},"
           done
           # 去掉最后一个逗号，然后封底
           json_content=${json_content%?}']}'
