@@ -232,5 +232,6 @@ CONFIG_PACKAGE_luci-app-adblock=y
 CONFIG_PACKAGE_luci-app-tinyproxy=y
 CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_tcpdump-mini=y
+CONFIG_PACKAGE_cdnspeedtest=y
 EOF
 }

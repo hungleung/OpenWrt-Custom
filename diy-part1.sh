@@ -29,6 +29,8 @@ if [ -e feeds.conf.default ]; then
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 # passwall 等的依赖
 src-git small https://github.com/kenzok8/small
+# XIU2/CloudflareSpeedTest on OpenWrt by 天灵
+src-git cdnspeedtest https://github.com/immortalwrt-collections/openwrt-cdnspeedtest.git
 
 EOF
     echo 已增补内容至默认源配置文件[feeds.conf.default]
